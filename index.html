@@ -18,9 +18,28 @@
 
 <body background="background2.avif">
     <center>
+        <div id="myModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                        <h4>Instructions</h4>
+                    </div>
+                    <div class="modal-body">
+                        <ol>
+                            <li>Keep your laptop screen straight.</li>
+                            <li>Move yourself approximately 3-4 feet away from the device.</li>
+                            <li>Move your right wrist in an ascending and descending manner. Doing this will provoke a red dot to appear.</li>
+                            <li>Now press the play button and move yourself 3-4 feet back again.</li>
+                            <li>The red paddle is your paddle. This paddle will move according to where your wrist is. The higher the wrist, the higher the paddle.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
         <span class="btn btn-info heading">
             <h1 class="title">AI Ping Pong</h1>
-            <button class="btn btn-primary instructions" data-toggle="myModal"data-target="#myModal">Instructions</button>
+            <button class="btn btn-primary instructions" data-toggle="myModal" data-target="#myModal">Instructions</button>
         </span>
         <br>
         <br>
@@ -30,7 +49,12 @@
         <button class="btn btn-warning" id="status">Status: </button>
         <br>
         <br>
-        <div id="canvas">Hellow</div>
+        <div id="canvas">hello</div>
+        <br>
+        <button class="btn btn-danger" onclick="restart()" id="restart_btn">Restart</button>
+        <br>
+        <br> 
+        <div id="footer">Developed by: Abhi</div>
     </center>
 
     <script src="main.js"></script>
