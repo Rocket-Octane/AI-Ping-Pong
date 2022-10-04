@@ -26,13 +26,22 @@ var ball = {
 
 function setup() {
   var canvas = createCanvas(700, 600);
-  canvas.center();
+  canvas.parent("canvas");
+  video = createCapture(600, 300);
+  video.center();
+  video.size(700, 600);
+  poseNet = ml5.poseNet(video, modelLoaded);
+}
+
+function modelLoaded(){
+  console.log("Model is initialized");
 }
 
 
 function draw() {
+  image(img, 0, 0, 700, 600);
 
-  background(0);
+  background("green");
 
   fill("black");
   stroke("black");
@@ -100,11 +109,11 @@ function drawScore() {
   textAlign(CENTER);
   textSize(20);
   fill("white");
-  stroke(250, 0, 0)
-  text("Player:", 100, 50)
+  stroke(250, 0, 0);
+  text("Player:", 100, 50);
   text(playerscore, 140, 50);
-  text("Computer:", 500, 50)
-  text(pcscore, 555, 50)
+  text("Computer:", 500, 50);
+  text(pcscore, 555, 50);
 }
 
 
