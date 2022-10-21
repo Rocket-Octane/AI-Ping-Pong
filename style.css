@@ -1,36 +1,41 @@
-body {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto;
-}
 
-.heading {
-    margin: 0;
-    width: 100%;
+.heading
+{
+width: 100%;
+text-align: left;
 }
-
-.title {
+.heading h3{
     display: inline;
-    float: left;
-    margin: 0;
 }
 
-.instructions{
+.heading button{
     float: right;
-    margin: 0;
-    width: 150px;
-    font-size: 18px;
-    height: 43px;
+    border: 1px solid white;
 }
 
-#footer{
-    margin: 0;
-    line-height: 2;
-    background-color: grey;
-    width: 100%;
+#start ,#status, #restart
+{
+font-size: 22px;
 }
 
-canvas{
-    border: 2px solid black;
-    border-radius: 100px
+.modal-dialog
+{
+    width: 70%;
 }
+.modal-body
+{
+    text-align: left;
+    font-size: 20px;
+}
+h4
+{
+   background-color: grey;
+   color:white;
+   line-height: 2;
+}
+canvas 
+  {
+      border:3px solid white;
+      border-radius: 20px;
+      box-shadow:  5px 5px 5px white;
+  }
